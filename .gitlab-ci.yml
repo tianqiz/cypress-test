@@ -1,7 +1,0 @@
-image: cypress/base:12
-
-test: 
-    stage: test
-    script:
-      - npm install
-      - npm run build:and:test
