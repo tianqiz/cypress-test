@@ -5,7 +5,7 @@ describe('UI test', () => {
         cy.visit('/');
     })
 
-
+    //add some comments
     it('Should add a new todo correctly', () => {
         cy.intercept('POST', 'http://localhost:8080/todos').as('postRequest');
         cy.addNewTodo('First todo');
